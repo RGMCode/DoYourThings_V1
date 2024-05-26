@@ -14,6 +14,8 @@
 		36420B042C03C315009900A5 /* DoYourThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B032C03C315009900A5 /* DoYourThingsTests.swift */; };
 		36420B0E2C03C315009900A5 /* DoYourThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B0D2C03C315009900A5 /* DoYourThingsUITests.swift */; };
 		36420B102C03C315009900A5 /* DoYourThingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B0F2C03C315009900A5 /* DoYourThingsUITestsLaunchTests.swift */; };
+		36420B1E2C03C3F0009900A5 /* DoYourThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B1D2C03C3F0009900A5 /* DoYourThings.swift */; };
+		36420B202C03D3F9009900A5 /* DoYourThingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		36420B092C03C315009900A5 /* DoYourThingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoYourThingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36420B0D2C03C315009900A5 /* DoYourThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingsUITests.swift; sourceTree = "<group>"; };
 		36420B0F2C03C315009900A5 /* DoYourThingsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36420B1C2C03C38A009900A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36420B1D2C03C3F0009900A5 /* DoYourThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings.swift; sourceTree = "<group>"; };
+		36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingsViewModel.swift; sourceTree = "<group>"; };
+		36420B212C03D4D3009900A5 /* DYT_Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DYT_Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		36420AE62C03C313009900A5 = {
 			isa = PBXGroup;
 			children = (
+				36420B1C2C03C38A009900A5 /* README.md */,
 				36420AF12C03C314009900A5 /* DoYourThings */,
 				36420B022C03C315009900A5 /* DoYourThingsTests */,
 				36420B0C2C03C315009900A5 /* DoYourThingsUITests */,
@@ -96,6 +103,9 @@
 			children = (
 				36420AF22C03C314009900A5 /* DoYourThingsApp.swift */,
 				36420AF42C03C314009900A5 /* ContentView.swift */,
+				36420B1D2C03C3F0009900A5 /* DoYourThings.swift */,
+				36420B212C03D4D3009900A5 /* DYT_Data.json */,
+				36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */,
 				36420AF62C03C315009900A5 /* Assets.xcassets */,
 				36420AF82C03C315009900A5 /* Preview Content */,
 			);
@@ -258,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36420AF52C03C314009900A5 /* ContentView.swift in Sources */,
+				36420B202C03D3F9009900A5 /* DoYourThingsViewModel.swift in Sources */,
+				36420B1E2C03C3F0009900A5 /* DoYourThings.swift in Sources */,
 				36420AF32C03C314009900A5 /* DoYourThingsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
