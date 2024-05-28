@@ -16,6 +16,9 @@
 		36420B102C03C315009900A5 /* DoYourThingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B0F2C03C315009900A5 /* DoYourThingsUITestsLaunchTests.swift */; };
 		36420B1E2C03C3F0009900A5 /* DoYourThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B1D2C03C3F0009900A5 /* DoYourThings.swift */; };
 		36420B202C03D3F9009900A5 /* DoYourThingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */; };
+		36420B232C03E040009900A5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B222C03E040009900A5 /* AddView.swift */; };
+		36420B252C03F278009900A5 /* DoYourThingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B242C03F278009900A5 /* DoYourThingsDetailView.swift */; };
+		36420B272C06577F009900A5 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420B262C06577F009900A5 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		36420B1D2C03C3F0009900A5 /* DoYourThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings.swift; sourceTree = "<group>"; };
 		36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingsViewModel.swift; sourceTree = "<group>"; };
 		36420B212C03D4D3009900A5 /* DYT_Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DYT_Data.json; sourceTree = "<group>"; };
+		36420B222C03E040009900A5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		36420B242C03F278009900A5 /* DoYourThingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingsDetailView.swift; sourceTree = "<group>"; };
+		36420B262C06577F009900A5 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 		36420AF12C03C314009900A5 /* DoYourThings */ = {
 			isa = PBXGroup;
 			children = (
+				36420B262C06577F009900A5 /* EditView.swift */,
 				36420AF22C03C314009900A5 /* DoYourThingsApp.swift */,
 				36420AF42C03C314009900A5 /* ContentView.swift */,
+				36420B242C03F278009900A5 /* DoYourThingsDetailView.swift */,
 				36420B1D2C03C3F0009900A5 /* DoYourThings.swift */,
 				36420B212C03D4D3009900A5 /* DYT_Data.json */,
 				36420B1F2C03D3F9009900A5 /* DoYourThingsViewModel.swift */,
+				36420B222C03E040009900A5 /* AddView.swift */,
 				36420AF62C03C315009900A5 /* Assets.xcassets */,
 				36420AF82C03C315009900A5 /* Preview Content */,
 			);
@@ -267,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36420B252C03F278009900A5 /* DoYourThingsDetailView.swift in Sources */,
 				36420AF52C03C314009900A5 /* ContentView.swift in Sources */,
 				36420B202C03D3F9009900A5 /* DoYourThingsViewModel.swift in Sources */,
+				36420B232C03E040009900A5 /* AddView.swift in Sources */,
+				36420B272C06577F009900A5 /* EditView.swift in Sources */,
 				36420B1E2C03C3F0009900A5 /* DoYourThings.swift in Sources */,
 				36420AF32C03C314009900A5 /* DoYourThingsApp.swift in Sources */,
 			);

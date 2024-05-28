@@ -11,5 +11,5 @@ struct DoYourThings: Identifiable, Hashable, Codable {
     var id = UUID()
     var dytTopic: String
     var dytDetails: String
-    var dytColor: String
+    var dytPriority: String
 }
