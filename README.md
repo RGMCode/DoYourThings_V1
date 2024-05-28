@@ -1,7 +1,7 @@
 #  Do Your Things App by RGMCode
 
 
-##DoYourThings ist eine einfache iOS-Anwendung, die es Ihnen ermöglicht, Aufgaben mit Prioritäten zu verfolgen und zu organisieren.
+## DoYourThings ist eine einfache iOS-Anwendung, die es Ihnen ermöglicht, Aufgaben mit Prioritäten zu verfolgen und zu organisieren.
 
 ### Funktionen:
 
