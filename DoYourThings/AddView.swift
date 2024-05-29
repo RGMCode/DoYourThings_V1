@@ -18,28 +18,45 @@ struct AddView: View {
     
     var body: some View {
         VStack {
-            Form {
-                Section {
-                    Picker("Priority:", selection: $dytPriority) {
-                        ForEach(priority, id: \.self) {
-                            Text($0)
+            VStack {
+                Text("DoYourThings")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+                Form {
+                    Section {
+                        Picker("Priority:", selection: $dytPriority) {
+                            ForEach(priority, id: \.self) {
+                                Text($0)
+                            }
                         }
+                        .font(.title3)
                     }
-                    .font(.title3)
                 }
-                
-                Section(header: Text("Aufgabe:").font(.title)) {
+                VStack {
+                    Text("Thing:")
+                        .font(.title)
+                        .foregroundColor(.white)
                     TextEditor(text: $dytTopic)
-                        .border(Color.gray)
-                }
-                
-                Section(header: Text("Details:").font(.title)) {
+                        .background(Color.white)
+                        .frame(height: 100)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 2)
+                        )
+                    Text("Details:")
+                        .font(.title)
+                        .foregroundColor(.white)
                     TextEditor(text: $dytDetails)
-                        .border(Color.gray)
-                        .frame(height: 300)
-                }
-                
-                Section {
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 2)
+                        )
+                }.padding(.top, -200)
+            }.padding()
                     Button(action: {
                         doYourThingsViewModel.addDoYourThings(dytTopic: dytTopic, dytDetails: dytDetails, dytPriority: dytPriority)
                         presentationMode.wrappedValue.dismiss()
@@ -47,13 +64,15 @@ struct AddView: View {
                         Image(systemName: "pencil.tip.crop.circle.badge.plus.fill")
                             .font(.system(size: 50))
                             .frame(maxWidth: .infinity, alignment: .center)
-                            .foregroundColor(.green)
-                    }
-                }
-            }
-            .navigationTitle("Neues Do Your Thing")
-        }
+                            .foregroundColor(.teal)
+                            .background(Color.clear)
+                    }.navigationTitle("Neues Do Your Thing")
+        }.background(Gradient(colors: [.teal, .mint, .green]).opacity(0.6))
+        .colorScheme(.light)
+        .scrollContentBackground(.hidden)
+        
     }
+    
 }
 
 #Preview {

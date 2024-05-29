@@ -25,27 +25,49 @@ struct EditView: View {
     
     var body: some View {
         VStack {
-            Form {
-                Section {
-                    Picker("Priority:", selection: $dytPriority) {
-                        ForEach(priority, id: \.self) {
-                            Text($0)
+            VStack {
+                Text("DoYourThings")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+                Form {
+                    Section {
+                        Picker("Priority:", selection: $dytPriority) {
+                            ForEach(priority, id: \.self) {
+                                Text($0)
+                            }
                         }
+                        .font(.title3)
                     }
-                    .font(.title3)
                 }
-                
-                Section(header: Text("Aufgabe:").font(.title)) {
+                VStack {
+                    Text("Thing:")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .underline()
+                    
                     TextEditor(text: $dytTopic)
-                        .border(Color.gray)
-                }
-                
-                Section(header: Text("Details:").font(.title)) {
+                        .background(Color.white)
+                        .frame(height: 100)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 2)
+                        )
+                    Text("Details:")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .underline()
+                    
                     TextEditor(text: $dytDetails)
-                        .border(Color.gray)
-                        .frame(height: 300)
-                }
-                
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 2)
+                        )
+                }.padding(.top, -200)
+            }.padding()
                 Section {
                     Button(action: {
                         doYourThingsViewModel.updateDoYourThings(doYourThings: doYourThings, newTopic: dytTopic, newDetails: dytDetails, newDytPriority: dytPriority)
@@ -54,12 +76,13 @@ struct EditView: View {
                         Image(systemName: "pencil.tip.crop.circle.badge.plus.fill")
                             .font(.system(size: 50))
                             .frame(maxWidth: .infinity, alignment: .center)
-                            .foregroundColor(.green)
+                            .foregroundColor(.teal)
                     }
-                }
-            }
-            .navigationTitle("Bearbeiten")
-        }
+                }.navigationTitle("Bearbeiten")
+        }.colorScheme(.light)
+         .background(Gradient(colors: [.teal, .mint, .green]).opacity(0.6))
+         .scrollContentBackground(.hidden)
+        
     }
 }
 
