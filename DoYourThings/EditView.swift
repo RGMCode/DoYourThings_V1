@@ -41,31 +41,31 @@ struct EditView: View {
                     }
                 }
                 VStack {
-                    Text("Thing:")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .underline()
-                    
-                    TextEditor(text: $dytTopic)
-                        .background(Color.white)
-                        .frame(height: 100)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.gray, lineWidth: 2)
-                        )
-                    Text("Details:")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .underline()
-                    
-                    TextEditor(text: $dytDetails)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.gray, lineWidth: 2)
-                        )
+                        Text("Thing:")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .underline()
+                        
+                        TextEditor(text: $dytTopic)
+                            .background(Color.white)
+                            .frame(height: 100)
+                            .cornerRadius(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.gray, lineWidth: 2)
+                            )
+                        Text("Details:")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .underline()
+                        
+                        TextEditor(text: $dytDetails)
+                            .background(Color.white)
+                            .cornerRadius(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.gray, lineWidth: 2)
+                            )
                 }.padding(.top, -200)
             }.padding()
                 Section {

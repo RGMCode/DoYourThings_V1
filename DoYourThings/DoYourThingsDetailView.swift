@@ -37,7 +37,7 @@ struct DoYourThingsDetailView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, minHeight: 50 ,alignment: .leading)
                             .padding(.top, -20)
-                            .disabled(true)
+                            //.disabled(true)
                     }.overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(.gray, lineWidth: 2)
@@ -52,7 +52,7 @@ struct DoYourThingsDetailView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, minHeight: 250 ,alignment: .leading)
                             .padding(.top, -20)
-                            .disabled(true)
+                            //.disabled(true)
                     }.overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(.gray, lineWidth: 2)
