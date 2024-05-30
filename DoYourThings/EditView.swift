@@ -16,6 +16,8 @@ struct EditView: View {
     let priority = ["Hoch", "Normal", "Niedrig"]
     @Environment(\.presentationMode) var presentationMode
     
+    @FocusState var isInputActive: Bool
+    
     init(doYourThings: Binding<DoYourThings>) {
         self._doYourThings = doYourThings
         self._dytTopic = State(initialValue: doYourThings.wrappedValue.dytTopic)
@@ -82,7 +84,15 @@ struct EditView: View {
         }.colorScheme(.light)
          .background(Gradient(colors: [.teal, .mint, .green]).opacity(0.6))
          .scrollContentBackground(.hidden)
-        
+         .focused($isInputActive)
+         .toolbar {
+             ToolbarItemGroup(placement: .keyboard) {
+             Spacer()
+             Button("fertig") {
+                 isInputActive = false
+                 }
+               }
+             }
     }
 }
 

@@ -14,6 +14,7 @@ struct AddView: View {
     @State private var dytDetails: String = ""
     @State private var dytPriority = "Normal"
     let priority = ["Hoch", "Normal", "Niedrig"]
+    @FocusState var isInputActive: Bool
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -70,7 +71,15 @@ struct AddView: View {
         }.background(Gradient(colors: [.teal, .mint, .green]).opacity(0.6))
         .colorScheme(.light)
         .scrollContentBackground(.hidden)
-        
+        .focused($isInputActive)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+            Spacer()
+            Button("fertig") {
+                isInputActive = false
+                }
+              }
+            }
     }
     
 }

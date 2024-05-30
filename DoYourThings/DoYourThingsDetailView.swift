@@ -50,7 +50,7 @@ struct DoYourThingsDetailView: View {
                         TextEditor(text: $doYourThings.dytDetails)
                             .font(.title2)
                             .foregroundColor(.white)
-                            .frame(maxWidth: .infinity, minHeight: 250 ,alignment: .leading)
+                            .frame(maxWidth: .infinity, minHeight: 370 ,alignment: .leading)
                             .padding(.top, -20)
                             //.disabled(true)
                     }.overlay(
